@@ -4,9 +4,9 @@ import { useSprings, animated } from '@react-spring/web';
 
 const BlurText = ({
 text = '',
-delay = 100,
+delay = 200,
 className = '',
-animateBy = 'letters', // 'words' or 'letters'
+animateBy = 'words', // 'words' or 'letters'
 direction = 'top', // 'top' or 'bottom'
 threshold = 0.1,
 rootMargin = '0px',
@@ -82,8 +82,8 @@ return (
           willChange: 'transform, filter, opacity',
         }}
       >
-        {elements[index] === ' ' ? ' ' : elements[index]}
-        {animateBy === 'words' && index < elements.length - 1 && ' '}
+        {elements[index] === ' ' ? ' ' : elements[index]}
+        {animateBy === 'words' && index < elements.length - 1 && ' '}
       </animated.span>
     ))}
   </p>
