@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router"
 import "./assets/Style/Style.css"
+
 import Home from './pages/Home'
 import Contact from './pages/Contact'
 

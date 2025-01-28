@@ -1,4 +1,42 @@
-@import "tailwindcss";
+
+.body{
+    background-color: black;
+    color: aliceblue;
+}
+
+
+/* Home Section all  */
+
+.containers{
+    height: 100vh;
+}
+.section1{
+   font-size: 1.2rem;
+}
+.containers1{
+    height: 80vh;
+}
+.section2{
+    font-size: 8rem;
+}
+.containers2{
+    height: 130vh;
+}
+@media (max-width: 768px) {
+    .containers{
+        height: 140vh;
+        
+    }
+    .section1{
+        font-size: 1.0rem;
+     }
+     .containers1{
+        height: 140vh;
+    }
+    .section2{
+        font-size: 4rem;
+    }
+  }
 
 
 
